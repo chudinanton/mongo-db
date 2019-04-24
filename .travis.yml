@@ -12,10 +12,10 @@ env:
   - secure: QCCSwCKjn0m0Od+HkGygYwBjYDdcp54Jbj6Ly0r+0pzx3NFjYYd9qBgIGwwf1MPCO53m7OQsjqhTi35x/HVb5lNZdQJGJAsrYFiH26fzbx5MYLOh1kR56G9Oqg6iJTVS0mCUoe9L/1Hr9sE/ZSMnkUX76OJGw2UgbLEgxnmy7RBjfY7LxiZm23MXRqNfhKN8OhBnISlaq+5eMV+1LyT06yt7Vc24aKlQ1lgUZqDro1JHvp6vjXc9TV0ZW44kRBzticmN81K39sWLFXwCdHJhoRADXQgFq/4gli1Bp89PMjhb0x7twyT+Cl2fnqKNNWyjIJ5/Yr6rQV58dT/1RWhunHsG2exz4hJ9uYMiTXFuGpmCKqOPMjs6ToL6Tt2RzjG7hk2ys8fxUIvAboeztQLWNy2Ha0iAqe/x+qbGkMkyUejShk/hMho40FMI/CWrVHUgHqK5DBK4C5pHzaRcUgiQilO+s0DoyTSllUuUETpWisDZjnFPFJF9AQuB88D09KCNbXW5MkliGr3iCl5wFA46Jq7/bsAIK/tdJKfpw5Rj8qvhrIwBvxXK2GYhNFzV4DDZqWS9qUyygUjRV+Lu1WKVNNhIR3a452CV2qGF96yreK0gqX8fUgx7fhXbjf9gSee/kXMK8P/iMTbfc/CWHnPn4xOmaJk+bOtJnKdfmfrB0OI=
 script:
 - molecule create
-- molecule converge
-- molecule verify
-after_script:
-- molecule destroy
+#- molecule converge
+#- molecule verify
+#after_script:
+#- molecule destroy
 notifications:
   slack:
     rooms:
