@@ -4,4 +4,5 @@
   hosts: all
   vars:
     mongo_bind_ip: 0.0.0.0
-- import_playbook: tasks/main.yml
+  roles:
+    - role: mongo-db
