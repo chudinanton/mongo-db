@@ -1,8 +1,8 @@
 language: python
 python:
-- '3.6'
+- '3.7'
 install:
-- pip install ansible molecule apache-libcloud
+- pip install ansible>=2.4 molecule>=2.6 testinfra>=1.10 apache-libcloud
 env:
   matrix:
   - GCE_CREDENTIALS_FILE="~/.ansible/Infra-40b905733b2b.json"
