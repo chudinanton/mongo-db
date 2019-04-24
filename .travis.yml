@@ -1,6 +1,6 @@
 language: python
 python:
-- '3.7'
+- '3.6'
 install:
 - pip install ansible>=2.4 molecule>=2.6 testinfra>=1.10 apache-libcloud
 env:
